@@ -1,4 +1,4 @@
-from enum import TipoContrato
+from ..Enum import TipoContrato
 
 class Empleado:
     def __init__(self, DNI, nombre, apellido, anioIngreso, Tipo_Contrato):       

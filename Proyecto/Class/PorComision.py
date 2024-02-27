@@ -1,5 +1,8 @@
-class PorComision:
-    def __init__(self, clientesCaptados, montoPorCliente):
+from Empleado import Empleado
+from Enum.TipoContrato import TipoContrato
+class PorComision(Empleado):
+    def __init__(self, DNI, nombre, apellido, anioIngreso, Tipo_Contrato, clientesCaptados, montoPorCliente):
+        super().__init__(DNI, nombre, apellido, anioIngreso, Tipo_Contrato)
         self.clientesCaptados = clientesCaptados
         self.montoPorCliente = montoPorCliente
 
@@ -18,3 +21,6 @@ class PorComision:
                 empleado_max_clientes = empleado
 
         return empleado_max_clientes
+    
+    def mostrarSalario(self):
+        return "Clientes Captados: " + str(self.clientesCaptados) + " Monto por Cliente: " + str(self.montoPorCliente)

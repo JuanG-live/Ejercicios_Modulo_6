@@ -1,4 +1,4 @@
-from Class import Empleado
+from ..Class import Empleado
 
 class SalarioFijo(Empleado):
     def __init__(self, DNI, nombre, apellido, anioIngreso, Tipo_Contrato, sueldo_fijo, porcentaje_adicional):
@@ -18,8 +18,7 @@ class SalarioFijo(Empleado):
     def calcularSalar(self):
         salario = self.sueldo_fijo + (self.sueldo_fijo * self.calcularAntiguedad())
         return salario
-
     
-    def __str__(self):
+    def mostrarSalario(self):
         return "Salario Fijo: " + str(self.sueldo_fijo) + " " + str(self.porcentaje_adicional)
     
