@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Empleado
+--
+- String DNI
+- String nombre
+- String apellido</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>72</y><w>189</w><h>171</h></coordinates><panel_attributes>Empleado
+--
+- String DNI
+- String nombre
+- String apellido
+- int anioIngreso
+- TipoContrato relacionContrato
+--
++ calcularSalar() pass
++ mostarSalar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>9</x><y>315</y><w>189</w><h>171</h></coordinates><panel_attributes>SalarioFijo
+--
+- float sueldoFijo
+- float pocentajeAd
+- Antiguedad antiguedad
+--
++ calcularSalar() pass
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>243</x><y>306</y><w>189</w><h>171</h></coordinates><panel_attributes>PorComision
+--
+- Float salarioMinimo
+- int clientesCaptados
+- float montoPorCliente
+--
++ calcularSalar() pass
++ empleadoConMasClientes()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>81</x><y>234</y><w>36</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>243</x><y>72</y><w>189</w><h>171</h></coordinates><panel_attributes>&lt;Enum&gt;
+TipoContrato
+--
+FIJO = "Salario Fijo"
+COMI = "Por Comision"
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>153</y><w>81</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>234</y><w>225</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>230;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>306</y><w>189</w><h>171</h></coordinates><panel_attributes>&lt;Enum&gt;
+Antiguedad
+--
+CAT1 = "Menos de 2 años"
+CAT2 = "Entre 2 y 5 años"
+CAT3 = "Mas de 5 años"
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>369</y><w>90</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element></diagram>
